@@ -6,3 +6,8 @@
 - **Tailwind CSS**
 - **HTML**
 - **JavaScript**
+
+## To-do
+- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
