@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
+    <title>Hackathon Registration</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Welcome to the Hackathon</h1>
-        <p>Landing and conversion page for the 2024 Austin Hackathon</p>
-    </header>
 
-    <section id="overview">
-        <h2>Hackathon Overview</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra ex ac justo elementum, et hendrerit odio vehicula.</p>
-        <p>Nullam ac vestibulum dolor. Nulla facilisi. Integer et mauris nec nisi aliquet eleifend.</p>
-    </section>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-white text-xl font-bold">Hackathon Registration</a>
+            <!-- Navigation Links -->
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white hover:underline">Home</a></li>
+                <li><a href="#" class="text-white hover:underline">About</a></li>
+                <li><a href="#" class="text-white hover:underline">Contact</a></li>
+                <li><a href="#" class="text-white hover:underline">Register</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <section id="schedule">
-        <h2>Schedule</h2>
-        <ul>
-            <li>Day 1: Registration and Team Formation</li>
-            <li>Day 2: Hacking Begins</li>
-            <li>Day 3: Presentations and Judging</li>
-        </ul>
-    </section>
-
-    <section id="registration">
-        <h2>Registration</h2>
-        <form action="submit_registration.php" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="team">Team Name:</label><br>
-            <input type="text" id="team" name="team"><br>
-            <input type="submit" value="Register">
-        </form>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>If you have any questions, please contact us:</p>
-        <ul>
-            <li>Email: info@example.com</li>
-            <li>Phone: 123-456-7890</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Hackathon. All rights reserved.</p>
-    </footer>
+    <!-- Main Content -->
+    <div class="container mx-auto p-6">
+        <!-- Registration Form -->
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h2 class="text-2xl font-bold mb-4">Hackathon Registration Form</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                        Name
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter your name">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                        Email Address
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email address">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="team-name">
+                        Team Name (if applicable)
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="team-name" type="text" placeholder="Enter your team name">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Register
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
