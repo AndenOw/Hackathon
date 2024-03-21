@@ -8,6 +8,12 @@
 - **JavaScript**
 
 ## To-do
-- [x] Task 1
-- [ ] Task 2
-- [ ] Task 3
+- [ ] Tech stack
+- [ ] Site capabilities
+  - [ ] Email list (automatically send the google form and discord link)
+  - [ ] Add goat counter (very tiny google analytics script that tracks basic engagement stats)
+  - [ ] Upcoming event list
+  - [ ] Discord link
+- [ ] Make it pretty
+- [ ] Mission statement/marketing (about page)
+- [ ] Custom domain? (with SEO?)
