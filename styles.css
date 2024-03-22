@@ -1,0 +1,7 @@
+/* styles.css */
+
+@layer utilities {
+    .bg-blue-purple {
+        background-color: #6f00ff; /* Example accent color */
+    }
+}
