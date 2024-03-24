@@ -18,3 +18,4 @@
 - [ ] Mission statement/marketing (about page)
 - [ ] Custom domain? (with SEO?)
 - [ ] [FUSpam](https://www.whatsmyip.org/lib/fuspam-akismet-php/) and/or [reCAPTCHA](https://www.google.com/recaptcha/about/) to reduce botting/spam
+- [ ] Find free email list tool to integrate
