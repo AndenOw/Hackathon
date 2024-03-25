@@ -16,6 +16,10 @@
     color: #9c50ff;
 }
 
-.text-blue-purple:hover {
+.text-blue-purple-hover {
+    color: #9c50ff;
+}
+
+.text-blue-purple-hover:hover {
     color: #6f00ff;
 }
