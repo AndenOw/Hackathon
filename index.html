@@ -35,10 +35,11 @@
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold">Welcome to [undefined] hackathon</h1>
             <p class="text-lg md:text-xl lg:text-2xl">Fostering collaboration and connection for developers in the Austin tech community</p>
         </div>
-    </div>
+        <div id="scrollPlaceholder" class="absolute bottom-0 w-full h-20 z-0"></div>
+    </div>    
 
     <!-- Short gradient for "eventsBelow" to hide under -->
-    <div class="h-8 relative bg-gradient-to-b from-transparent to-gray-900 z-10"></div>
+    <div class="sm:h-0 md:h-4 lg:h-8 relative bg-gradient-to-b from-transparent to-gray-900 z-10"></div>
 
     <!-- Event Section -->
     <section id="events" class="relative z-10 bg-gray-900 h-screen">
@@ -80,15 +81,32 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("eventsBelow").addEventListener("click", function() {
-                // Scroll to the events section
-                document.getElementById("events").scrollIntoView({ behavior: 'smooth' });
-        
-                // Hide the "eventsBelow" div
-                // this.style.display = "none";
+            var eventsBelow = document.getElementById("eventsBelow");
+            var scrollPlaceholder = document.getElementById("scrollPlaceholder");
+
+            // Variable to track whether the click event is enabled or disabled
+            var clickEnabled = true;
+
+            // Click event listener
+            eventsBelow.addEventListener("click", function() {
+                // Check if click event is enabled
+                if (clickEnabled) {
+                    // Scroll to the events section
+                    scrollPlaceholder.scrollIntoView({ behavior: 'smooth' });
+
+                    // Add fade-out class to trigger the animation
+                    eventsBelow.classList.add("fade-out");
+
+                    // Disable click event for 1.5 seconds
+                    clickEnabled = false;
+                    setTimeout(function() {
+                        eventsBelow.classList.remove("fade-out");
+                        clickEnabled = true;
+                    }, 1500);
+                }
             });
         });
-    </script>        
+    </script>
 </body>
 
 </html>

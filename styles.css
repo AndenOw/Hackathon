@@ -23,3 +23,9 @@
 .text-blue-purple-hover:hover {
     color: #6f00ff;
 }
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    pointer-events: none;
+}
