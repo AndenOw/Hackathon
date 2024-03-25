@@ -3,3 +3,19 @@
 .bg-blue-purple {
     background-color: #6f00ff;
 }
+
+.bg-blue-purple-hover {
+    background-color: #6f00ff;
+}
+
+.bg-blue-purple-hover:hover {
+    background-color: #5a00d1;
+}
+
+.text-blue-purple {
+    color: #9c50ff;
+}
+
+.text-blue-purple:hover {
+    color: #6f00ff;
+}
